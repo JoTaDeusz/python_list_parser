@@ -10,11 +10,10 @@ void yyerror(char *);
 
 
 %%
-
-
+("["[0-9]*"]") {return VECTOR;}
 
 %%
 
 int yywrap() {
-  return 1;
+return 1;
 }
