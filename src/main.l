@@ -12,6 +12,7 @@ void yyerror(char *);
 %%
 ("["[0-9]*"]") {return VECTOR;}
 
+. printf("ERRO\n"); exit(0);
 %%
 
 int yywrap() {
